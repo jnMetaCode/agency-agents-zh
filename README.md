@@ -7,7 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
 > 本项目基于 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)（MIT 协议）翻译并本土化，新增了中国平台专属智能体。
-> 当前收录 **129 个智能体**（118 个上游翻译 + 11 个中国市场原创）。
+> 当前收录 **137 个智能体**（118 个上游翻译 + 19 个中国市场原创）。
 
 ---
 
@@ -98,6 +98,10 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) ⭐ | 百度优化、百科/知道/贴吧生态 | 百度搜索营销 |
 | [私域流量运营师](marketing/marketing-private-domain-operator.md) ⭐ | 企微SCRM、社群运营、用户生命周期 | 私域体系搭建、复购增长 |
 | [直播电商主播教练](marketing/marketing-livestream-commerce-coach.md) ⭐ | 直播话术、选品排品、千川投放 | 直播带货、主播孵化 |
+| [跨境电商运营专家](marketing/marketing-cross-border-ecommerce.md) ⭐ | Amazon/Shopee/Lazada、海外仓、品牌出海 | 跨境电商全链路运营 |
+| [短视频剪辑指导师](marketing/marketing-short-video-editing-coach.md) ⭐ | 剪映/PR/达芬奇、调色、音频、特效 | 短视频剪辑技术指导 |
+| [微博运营策略师](marketing/marketing-weibo-strategist.md) ⭐ | 热搜运营、超话、舆情公关、粉丝经济 | 微博全链路运营 |
+| [播客内容策略师](marketing/marketing-podcast-strategist.md) ⭐ | 小宇宙/喜马拉雅、音频制作、商业化 | 播客内容创作与增长 |
 | [小红书专家](marketing/marketing-xiaohongshu-specialist.md) | 生活方式内容、趋势策略 | 小红书品牌建设 |
 | [微信公众号管理](marketing/marketing-wechat-official-account.md) | 订阅者运营、内容营销 | 微信公众号增长 |
 | [知乎策略师](marketing/marketing-zhihu-strategist.md) | 知识型内容、思想领袖建设 | 知乎品牌权威 |
@@ -205,6 +209,8 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [高管摘要师](support/support-executive-summary-generator.md) | 业务摘要、战略沟通 | 高管汇报、决策支持 |
 | [财务追踪员](support/support-finance-tracker.md) | 财务分析、预算管理 | 财务规划、成本管控 |
 | [基础设施运维师](support/support-infrastructure-maintainer.md) | 系统运维、可靠性工程 | 基础设施管理、故障排查 |
+| [招聘运营专家](support/support-recruitment-specialist.md) ⭐ | Boss直聘/猎聘、劳动法、校招社招 | 招聘全流程与HR合规 |
+| [供应链采购策略师](support/support-supply-chain-strategist.md) ⭐ | 1688采购、质检、供应商管理、ERP | 供应链与采购管理 |
 
 ### 专项部
 
@@ -229,6 +235,8 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [区块链安全审计师](specialized/blockchain-security-auditor.md) | 智能合约审计、漏洞检测 | 合约安全、DeFi 审计 |
 | [留学规划顾问](specialized/study-abroad-advisor.md) ⭐ | 多国申请策略、选校定位 | 留学规划、文书指导 |
 | [政务数字化售前顾问](specialized/government-digital-presales-consultant.md) ⭐ | 方案设计、标书、等保/信创 | 政务ToG项目售前 |
+| [企业培训课程设计师](specialized/corporate-training-designer.md) ⭐ | ADDIE/SAM、企业学习平台、TTT | 培训体系搭建与课程开发 |
+| [医疗健康营销合规师](specialized/healthcare-marketing-compliance.md) ⭐ | 医疗广告法、NMPA、互联网医疗 | 医疗健康营销合规 |
 
 ### 空间计算部
 
@@ -325,6 +333,14 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [直播电商主播教练](marketing/marketing-livestream-commerce-coach.md) | 抖音/快手/淘宝/视频号 | 直播话术、千川投放、选品排品 |
 | [飞书集成开发工程师](engineering/engineering-feishu-integration-developer.md) | 飞书 | 机器人、审批流、多维表格、消息卡片 |
 | [政务数字化售前顾问](specialized/government-digital-presales-consultant.md) | 政务/ToG | 方案设计、标书编写、等保/信创合规 |
+| [跨境电商运营专家](marketing/marketing-cross-border-ecommerce.md) | Amazon/Shopee/Lazada | 跨境选品、海外仓、合规税务、品牌出海 |
+| [短视频剪辑指导师](marketing/marketing-short-video-editing-coach.md) | 短视频制作 | 剪辑软件、调色、音频、动效、AI辅助剪辑 |
+| [微博运营策略师](marketing/marketing-weibo-strategist.md) | 微博 | 热搜运营、超话、舆情公关、粉丝经济 |
+| [播客内容策略师](marketing/marketing-podcast-strategist.md) | 小宇宙/喜马拉雅 | 播客策划、音频制作、分发与商业化 |
+| [招聘运营专家](support/support-recruitment-specialist.md) | HR/招聘 | Boss直聘/猎聘、劳动法合规、校招社招 |
+| [供应链采购策略师](support/support-supply-chain-strategist.md) | 供应链 | 1688采购、质检、供应商管理、ERP系统 |
+| [企业培训课程设计师](specialized/corporate-training-designer.md) | 企业培训 | ADDIE/SAM、企业学习平台、讲师培养 |
+| [医疗健康营销合规师](specialized/healthcare-marketing-compliance.md) | 医疗健康 | 医疗广告法、NMPA、互联网医疗合规 |
 | [提示词工程师](specialized/prompt-engineer.md) | 通用 | 系统提示词、思维链、评测框架 |
 | [留学规划顾问](specialized/study-abroad-advisor.md) | 教育 | 多国申请策略、选校定位、文书指导 |
 
