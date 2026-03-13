@@ -7,7 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
 > 本项目基于 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)（MIT 协议）翻译并本土化，新增了中国平台专属智能体。
-> 当前收录 **125 个智能体**（118 个上游翻译 + 7 个中国市场原创）。
+> 当前收录 **138 个智能体**（119 个上游翻译 + 19 个中国市场原创）。
 
 ---
 
@@ -64,6 +64,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [威胁检测工程师](engineering/engineering-threat-detection-engineer.md) | SIEM、威胁狩猎、检测规则 | 安全运营、威胁检测 |
 | [Solidity 智能合约工程师](engineering/engineering-solidity-smart-contract-engineer.md) | Solidity、EVM、Gas 优化、DeFi | 智能合约开发、Web3 |
 | [微信小程序开发者](engineering/engineering-wechat-mini-program-developer.md) ⭐ | WXML/WXSS、微信支付、云开发 | 微信小程序全栈开发 |
+| [飞书集成开发工程师](engineering/engineering-feishu-integration-developer.md) ⭐ | 飞书机器人、审批流、多维表格 | 飞书生态集成开发 |
 
 ### 设计部
 
@@ -93,8 +94,15 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [微信公众号运营](marketing/marketing-wechat-operator.md) ⭐ | 公众号内容、社群运营、裂变增长 | 微信生态营销 |
 | [B站内容策略师](marketing/marketing-bilibili-strategist.md) ⭐ | UP主运营、弹幕文化、中长视频 | B站内容增长、品牌合作 |
 | [快手策略师](marketing/marketing-kuaishou-strategist.md) ⭐ | 下沉市场、老铁文化、直播电商 | 快手运营、社区信任 |
-| [电商运营师](marketing/marketing-ecommerce-operator.md) ⭐ | 淘宝/拼多多/京东、直播带货、大促 | 电商全平台运营 |
+| [中国电商运营师](marketing/marketing-china-ecommerce-operator.md) | 淘宝/拼多多/京东、广告投放、大促作战 | 电商全链路深度运营 |
+| [电商运营师](marketing/marketing-ecommerce-operator.md) ⭐ | 淘宝/拼多多/京东、直播带货、大促 | 电商全平台运营（简洁版） |
 | [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) ⭐ | 百度优化、百科/知道/贴吧生态 | 百度搜索营销 |
+| [私域流量运营师](marketing/marketing-private-domain-operator.md) ⭐ | 企微SCRM、社群运营、用户生命周期 | 私域体系搭建、复购增长 |
+| [直播电商主播教练](marketing/marketing-livestream-commerce-coach.md) ⭐ | 直播话术、选品排品、千川投放 | 直播带货、主播孵化 |
+| [跨境电商运营专家](marketing/marketing-cross-border-ecommerce.md) ⭐ | Amazon/Shopee/Lazada、海外仓、品牌出海 | 跨境电商全链路运营 |
+| [短视频剪辑指导师](marketing/marketing-short-video-editing-coach.md) ⭐ | 剪映/PR/达芬奇、调色、音频、特效 | 短视频剪辑技术指导 |
+| [微博运营策略师](marketing/marketing-weibo-strategist.md) ⭐ | 热搜运营、超话、舆情公关、粉丝经济 | 微博全链路运营 |
+| [播客内容策略师](marketing/marketing-podcast-strategist.md) ⭐ | 小宇宙/喜马拉雅、音频制作、商业化 | 播客内容创作与增长 |
 | [小红书专家](marketing/marketing-xiaohongshu-specialist.md) | 生活方式内容、趋势策略 | 小红书品牌建设 |
 | [微信公众号管理](marketing/marketing-wechat-official-account.md) | 订阅者运营、内容营销 | 微信公众号增长 |
 | [知乎策略师](marketing/marketing-zhihu-strategist.md) | 知识型内容、思想领袖建设 | 知乎品牌权威 |
@@ -202,6 +210,8 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [高管摘要师](support/support-executive-summary-generator.md) | 业务摘要、战略沟通 | 高管汇报、决策支持 |
 | [财务追踪员](support/support-finance-tracker.md) | 财务分析、预算管理 | 财务规划、成本管控 |
 | [基础设施运维师](support/support-infrastructure-maintainer.md) | 系统运维、可靠性工程 | 基础设施管理、故障排查 |
+| [招聘运营专家](support/support-recruitment-specialist.md) ⭐ | Boss直聘/猎聘、劳动法、校招社招 | 招聘全流程与HR合规 |
+| [供应链采购策略师](support/support-supply-chain-strategist.md) ⭐ | 1688采购、质检、供应商管理、ERP | 供应链与采购管理 |
 
 ### 专项部
 
@@ -212,7 +222,6 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [智能体编排者](specialized/agents-orchestrator.md) | 多智能体协调、工作流管理 | 复杂项目的多智能体协作 |
 | [提示词工程师](specialized/prompt-engineer.md) ⭐ | LLM 提示词设计、优化、评测 | 提示词开发、AI 应用优化 |
 | [身份信任架构师](specialized/agentic-identity-trust.md) | AI 身份验证、信任框架 | AI 系统安全与信任 |
-| [数据分析报告员](specialized/data-analytics-reporter.md) | 数据报告自动化 | 定期数据报告生成 |
 | [数据整合师](specialized/data-consolidation-agent.md) | 多源数据整合、仪表盘 | 数据汇总与可视化 |
 | [LSP 索引工程师](specialized/lsp-index-engineer.md) | 代码智能、语义索引 | 代码导航、IDE 集成 |
 | [报告分发师](specialized/report-distribution-agent.md) | 报告分发、多渠道推送 | 自动化报告分发 |
@@ -225,6 +234,10 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [模型 QA 专家](specialized/specialized-model-qa.md) | ML 模型审计、质量验证 | 模型上线前检查 |
 | [ZK 管家](specialized/zk-steward.md) | Zettelkasten 知识管理 | 知识库构建、笔记系统 |
 | [区块链安全审计师](specialized/blockchain-security-auditor.md) | 智能合约审计、漏洞检测 | 合约安全、DeFi 审计 |
+| [留学规划顾问](specialized/study-abroad-advisor.md) ⭐ | 多国申请策略、选校定位 | 留学规划、文书指导 |
+| [政务数字化售前顾问](specialized/government-digital-presales-consultant.md) ⭐ | 方案设计、标书、等保/信创 | 政务ToG项目售前 |
+| [企业培训课程设计师](specialized/corporate-training-designer.md) ⭐ | ADDIE/SAM、企业学习平台、TTT | 培训体系搭建与课程开发 |
+| [医疗健康营销合规师](specialized/healthcare-marketing-compliance.md) ⭐ | 医疗广告法、NMPA、互联网医疗 | 医疗健康营销合规 |
 
 ### 空间计算部
 
@@ -317,6 +330,18 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [电商运营师](marketing/marketing-ecommerce-operator.md) | 淘宝/拼多多/京东 | 大促作战、直播带货、跨平台运营 |
 | [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) | 百度 | 百度优化、百科/知道/贴吧生态 |
 | [微信小程序开发者](engineering/engineering-wechat-mini-program-developer.md) | 微信 | WXML/WXSS、微信支付、云开发 |
+| [私域流量运营师](marketing/marketing-private-domain-operator.md) | 企业微信 | 企微SCRM、社群SOP、用户生命周期管理 |
+| [直播电商主播教练](marketing/marketing-livestream-commerce-coach.md) | 抖音/快手/淘宝/视频号 | 直播话术、千川投放、选品排品 |
+| [飞书集成开发工程师](engineering/engineering-feishu-integration-developer.md) | 飞书 | 机器人、审批流、多维表格、消息卡片 |
+| [政务数字化售前顾问](specialized/government-digital-presales-consultant.md) | 政务/ToG | 方案设计、标书编写、等保/信创合规 |
+| [跨境电商运营专家](marketing/marketing-cross-border-ecommerce.md) | Amazon/Shopee/Lazada | 跨境选品、海外仓、合规税务、品牌出海 |
+| [短视频剪辑指导师](marketing/marketing-short-video-editing-coach.md) | 短视频制作 | 剪辑软件、调色、音频、动效、AI辅助剪辑 |
+| [微博运营策略师](marketing/marketing-weibo-strategist.md) | 微博 | 热搜运营、超话、舆情公关、粉丝经济 |
+| [播客内容策略师](marketing/marketing-podcast-strategist.md) | 小宇宙/喜马拉雅 | 播客策划、音频制作、分发与商业化 |
+| [招聘运营专家](support/support-recruitment-specialist.md) | HR/招聘 | Boss直聘/猎聘、劳动法合规、校招社招 |
+| [供应链采购策略师](support/support-supply-chain-strategist.md) | 供应链 | 1688采购、质检、供应商管理、ERP系统 |
+| [企业培训课程设计师](specialized/corporate-training-designer.md) | 企业培训 | ADDIE/SAM、企业学习平台、讲师培养 |
+| [医疗健康营销合规师](specialized/healthcare-marketing-compliance.md) | 医疗健康 | 医疗广告法、NMPA、互联网医疗合规 |
 | [提示词工程师](specialized/prompt-engineer.md) | 通用 | 系统提示词、思维链、评测框架 |
 | [留学规划顾问](specialized/study-abroad-advisor.md) | 教育 | 多国申请策略、选校定位、文书指导 |
 
