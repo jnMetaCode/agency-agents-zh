@@ -24,17 +24,40 @@
 
 ## 快速开始
 
-### 方式一：配合 Claude Code 使用（推荐）
+### 方式一：一键安装到你的 AI 工具
+
+支持 **10 种主流 AI 编程工具**，一条命令搞定：
 
 ```bash
-# 复制智能体到 Claude Code 目录
-cp -r agency-agents-zh/* ~/.claude/agents/
+# 自动检测已安装的工具，一键安装
+./scripts/install.sh
+
+# 或指定安装到特定工具
+./scripts/install.sh --tool claude-code    # Claude Code
+./scripts/install.sh --tool copilot        # GitHub Copilot
+./scripts/install.sh --tool cursor         # Cursor
+./scripts/install.sh --tool openclaw       # OpenClaw
+./scripts/install.sh --tool opencode       # OpenCode
+./scripts/install.sh --tool aider          # Aider
+./scripts/install.sh --tool windsurf       # Windsurf
+./scripts/install.sh --tool antigravity    # Antigravity
+./scripts/install.sh --tool gemini-cli     # Gemini CLI
+./scripts/install.sh --tool qwen           # Qwen Code
+```
+
+> 部分工具需要先运行 `./scripts/convert.sh` 转换格式，详见下方工具集成说明。
+
+### 方式二：手动复制
+
+```bash
+# Claude Code / GitHub Copilot（直接复制即可）
+cp -r marketing/*.md ~/.claude/agents/
 
 # 在 Claude Code 中激活：
 # "激活前端开发者模式，帮我构建一个 React 组件"
 ```
 
-### 方式二：作为提示词参考
+### 方式三：作为提示词参考
 
 浏览下方智能体列表，复制/改编你需要的内容！
 
@@ -129,6 +152,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [SEO 专家](marketing/marketing-seo-specialist.md) | 搜索引擎优化、技术 SEO | Google SEO、内容优化 |
 | [轮播图增长引擎](marketing/marketing-carousel-growth-engine.md) | 轮播图内容、自动化投放 | 社交媒体轮播素材 |
 | [LinkedIn 内容创作专家](marketing/marketing-linkedin-content-creator.md) | LinkedIn 职场内容、B2B 获客 | LinkedIn 品牌建设 |
+| [图书联合作者](marketing/marketing-book-co-author.md) | 思想领袖力图书、代笔协作 | 图书策划与撰写 |
 
 ### 付费媒体部
 
@@ -313,6 +337,194 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [交接模板](strategy/coordination/handoff-templates.md) | 智能体间的交接规范 |
 | Phase 0-6 Playbooks | [发现](strategy/playbooks/phase-0-discovery.md) · [策略](strategy/playbooks/phase-1-strategy.md) · [基础](strategy/playbooks/phase-2-foundation.md) · [构建](strategy/playbooks/phase-3-build.md) · [加固](strategy/playbooks/phase-4-hardening.md) · [上线](strategy/playbooks/phase-5-launch.md) · [运营](strategy/playbooks/phase-6-operate.md) |
 | 场景 Runbook | [创业 MVP](strategy/runbooks/scenario-startup-mvp.md) · [企业功能](strategy/runbooks/scenario-enterprise-feature.md) · [事故响应](strategy/runbooks/scenario-incident-response.md) · [营销活动](strategy/runbooks/scenario-marketing-campaign.md) |
+
+---
+
+## 工具集成
+
+支持 **10 种主流 AI 编程工具**，通过 `scripts/` 目录下的脚本实现格式转换和一键安装。
+
+### 支持的工具
+
+| 工具 | 安装位置 | 类型 |
+|------|----------|------|
+| **Claude Code** | `~/.claude/agents/` | 全局，直接复制 |
+| **GitHub Copilot** | `~/.github/agents/` | 全局，直接复制 |
+| **OpenClaw** | `~/.openclaw/agency-agents/` | 全局，需转换 |
+| **Antigravity** | `~/.gemini/antigravity/skills/` | 全局，需转换 |
+| **Gemini CLI** | `~/.gemini/extensions/agency-agents/` | 全局，需转换 |
+| **Qwen Code** | `.qwen/agents/` | 项目级，需转换 |
+| **Cursor** | `.cursor/rules/` | 项目级，需转换 |
+| **OpenCode** | `.opencode/agents/` | 项目级，需转换 |
+| **Aider** | `CONVENTIONS.md` | 项目级，需转换 |
+| **Windsurf** | `.windsurfrules` | 项目级，需转换 |
+
+### 使用方法
+
+```bash
+# 第一步：转换格式（Claude Code 和 Copilot 可跳过此步）
+./scripts/convert.sh                    # 转换为所有工具格式
+./scripts/convert.sh --tool openclaw    # 只转换 OpenClaw 格式
+
+# 第二步：安装到本地
+./scripts/install.sh                    # 自动检测并安装
+./scripts/install.sh --tool openclaw    # 安装到指定工具
+
+# 检查智能体文件格式
+./scripts/lint-agents.sh
+```
+
+### 各工具安装说明
+
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+智能体直接从仓库复制到 `~/.claude/agents/`，无需转换。
+
+```bash
+./scripts/install.sh --tool claude-code
+```
+
+在 Claude Code 中激活：
+```
+激活前端开发者模式，帮我审查这个组件。
+```
+</details>
+
+<details>
+<summary><strong>GitHub Copilot</strong></summary>
+
+智能体直接从仓库复制到 `~/.github/agents/`，无需转换。
+
+```bash
+./scripts/install.sh --tool copilot
+```
+
+在 GitHub Copilot 中激活：
+```
+使用前端开发者智能体帮我审查这个组件。
+```
+</details>
+
+<details>
+<summary><strong>OpenClaw</strong></summary>
+
+OpenClaw 会将每个智能体拆分为三个文件：
+- `SOUL.md` — 身份、记忆、沟通风格、关键规则
+- `AGENTS.md` — 核心使命、技术交付物、工作流程
+- `IDENTITY.md` — 名称与简介
+
+```bash
+./scripts/convert.sh --tool openclaw
+./scripts/install.sh --tool openclaw
+
+# 安装后重启 OpenClaw 网关
+openclaw gateway restart
+```
+</details>
+
+<details>
+<summary><strong>Antigravity (Gemini)</strong></summary>
+
+转换为 Antigravity skill 格式并安装到 `~/.gemini/antigravity/skills/`。
+
+```bash
+./scripts/convert.sh --tool antigravity
+./scripts/install.sh --tool antigravity
+```
+</details>
+
+<details>
+<summary><strong>Gemini CLI</strong></summary>
+
+转换为 Gemini CLI 扩展格式并安装到 `~/.gemini/extensions/agency-agents/`。
+
+```bash
+./scripts/convert.sh --tool gemini-cli
+./scripts/install.sh --tool gemini-cli
+```
+</details>
+
+<details>
+<summary><strong>Qwen Code</strong></summary>
+
+转换为 Qwen Code SubAgent 格式并安装到项目目录 `.qwen/agents/`。
+
+```bash
+./scripts/convert.sh --tool qwen
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool qwen
+```
+
+在 Qwen Code 中激活：
+```
+使用前端开发者智能体帮我审查这个组件。
+```
+
+> 提示：安装后在 Qwen Code 中运行 `/agents manage` 刷新，或重启会话。
+</details>
+
+<details>
+<summary><strong>Cursor</strong></summary>
+
+转换为 Cursor rule 文件并安装到项目目录 `.cursor/rules/`。
+
+```bash
+./scripts/convert.sh --tool cursor
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool cursor
+```
+</details>
+
+<details>
+<summary><strong>OpenCode</strong></summary>
+
+转换为 OpenCode agent 文件并安装到项目目录 `.opencode/agents/`。
+
+```bash
+./scripts/convert.sh --tool opencode
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool opencode
+```
+</details>
+
+<details>
+<summary><strong>Aider</strong></summary>
+
+所有智能体编译为单个 `CONVENTIONS.md` 文件，Aider 会自动读取。
+
+```bash
+./scripts/convert.sh --tool aider
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool aider
+```
+
+在 Aider 会话中激活：
+```
+使用前端开发者智能体帮我重构这个组件。
+```
+</details>
+
+<details>
+<summary><strong>Windsurf</strong></summary>
+
+所有智能体编译为单个 `.windsurfrules` 文件。
+
+```bash
+./scripts/convert.sh --tool windsurf
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool windsurf
+```
+</details>
+
+### 修改智能体后重新生成
+
+添加新智能体或编辑现有智能体后，重新生成集成文件：
+
+```bash
+./scripts/convert.sh               # 重新生成所有工具
+./scripts/convert.sh --tool cursor  # 只重新生成指定工具
+```
 
 ---
 
