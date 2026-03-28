@@ -10,6 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 [![QQ群](https://img.shields.io/badge/QQ群-1071280067-blue?logo=tencentqq)](https://qm.qq.com/q/EeNQA9xCxy)
+[![gitcgr](https://gitcgr.com/badge/jnMetaCode/agency-agents-zh.svg)](https://gitcgr.com/jnMetaCode/agency-agents-zh)
 
 ### 📊 项目规模
 
