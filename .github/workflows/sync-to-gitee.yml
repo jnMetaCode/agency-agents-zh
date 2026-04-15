@@ -16,5 +16,5 @@ jobs:
 
       - name: Push to Gitee
         run: |
-          git remote add gitee https://jnMetaCode:${{ secrets.GITEE_TOKEN }}@gitee.com/jnMetaCode/agency-agents-zh.git
+          git remote add gitee https://jnMetaCode:${{ secrets.GITEE_TOKEN }}@gitee.com/jnMetaCode/agency-agents-zh.git 2>/dev/null || true
           git push gitee main --force

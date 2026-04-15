@@ -113,6 +113,7 @@ tool_label() {
     opencode)    printf "%-14s  %s" "OpenCode"     "(opencode.ai)"          ;;
     openclaw)    printf "%-14s  %s" "OpenClaw"     "(~/.openclaw)"          ;;
     cursor)      printf "%-14s  %s" "Cursor"       "(.cursor/rules)"        ;;
+    trae)        printf "%-14s  %s" "Trae"         "(.trae/rules)"          ;;
     aider)       printf "%-14s  %s" "Aider"        "(CONVENTIONS.md)"       ;;
     windsurf)    printf "%-14s  %s" "Windsurf"     "(.windsurfrules)"       ;;
     qwen)        printf "%-14s  %s" "Qwen Code"    "(~/.qwen/agents)"       ;;

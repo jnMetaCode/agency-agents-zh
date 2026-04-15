@@ -380,7 +380,7 @@ convert_codex() {
   # TOML 多行基本字符串（"""..."""）中反斜杠必须转义为 \\
   # 同时转义三引号（极罕见但防御性处理）
   local escaped_body
-  escaped_body="$(echo "$body" | sed -e 's/\\/\\\\/g' -e 's/"""/\\"""/')"
+  escaped_body="$(echo "$body" | sed -e 's/\\/\\\\/g' -e 's/"""/\\"""/g')"
 
   local escaped_desc
   escaped_desc="$(echo "$description" | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g')"
