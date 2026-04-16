@@ -26,6 +26,15 @@
 #   hermes       -- 复制到 ~/.hermes/skills/（全局）
 #   kiro         -- 复制到 ~/.kiro/agents/（全局）
 #   all          -- 安装所有已检测到的工具（默认）
+#
+# Hermes 专属参数：
+#   --category <名称>  只安装某一分类下的 skills，可重复传入多次。
+#                      分类取 integrations/hermes/ 下的目录名，例如：
+#                        --category marketing
+#                        --category engineering --category design
+#                      Discord 模式下 Hermes 会把每个 skill 注册为斜杠命令，
+#                      总 JSON 超过 8000 字符会被 Discord API 拒绝 (error 50035)，
+#                      若需要在 Discord 中使用建议按分类分批安装。
 
 set -euo pipefail
 
@@ -394,12 +403,27 @@ install_hermes() {
 
   [[ -d "$src" ]] || { err "integrations/hermes 不存在。请先运行 convert.sh --tool hermes"; return 1; }
 
+  # 若指定了 --category，只安装命中的分类；否则安装全部
+  local filter_note=""
+  if [[ ${#HERMES_CATEGORIES[@]} -gt 0 ]]; then
+    local c
+    for c in "${HERMES_CATEGORIES[@]}"; do
+      [[ -d "$src/$c" ]] || { err "hermes 分类不存在: ${c}（可选: $(ls "$src" | tr '\n' ' ')）"; return 1; }
+    done
+    filter_note=" [分类: ${HERMES_CATEGORIES[*]}]"
+  fi
+
   mkdir -p "$dest"
 
   # Hermes 保留两级目录结构：category/skill-name/SKILL.md
   local catdir
   while IFS= read -r -d '' catdir; do
     local catname; catname="$(basename "$catdir")"
+    if [[ ${#HERMES_CATEGORIES[@]} -gt 0 ]]; then
+      local matched=false c
+      for c in "${HERMES_CATEGORIES[@]}"; do [[ "$c" == "$catname" ]] && matched=true && break; done
+      $matched || continue
+    fi
     local skilldir
     while IFS= read -r -d '' skilldir; do
       local skillname; skillname="$(basename "$skilldir")"
@@ -410,7 +434,11 @@ install_hermes() {
     done < <(find "$catdir" -mindepth 1 -maxdepth 1 -type d -print0)
   done < <(find "$src" -mindepth 1 -maxdepth 1 -type d -print0)
 
-  ok "Hermes Agent: $count 个 skills -> $dest"
+  ok "Hermes Agent: $count 个 skills -> $dest$filter_note"
+  if [[ ${#HERMES_CATEGORIES[@]} -eq 0 && $count -gt 80 ]]; then
+    warn "Hermes Discord 模式对斜杠命令总长有 8000 字符上限（error 50035）。"
+    warn "若要在 Discord 中使用，建议用 --category <名称> 按分类分批安装。"
+  fi
 }
 
 install_kiro() {
@@ -464,15 +492,22 @@ install_tool() {
 # --- 入口 ---
 main() {
   local tool="all"
+  HERMES_CATEGORIES=()
 
   while [[ $# -gt 0 ]]; do
     case "$1" in
       --tool)            tool="${2:?'--tool 需要一个值'}"; shift 2 ;;
+      --category)        HERMES_CATEGORIES+=("${2:?'--category 需要一个值'}"); shift 2 ;;
       --no-interactive)  shift ;;
       --help|-h)         usage ;;
       *)                 err "未知选项: $1"; usage ;;
     esac
   done
+
+  if [[ ${#HERMES_CATEGORIES[@]} -gt 0 && "$tool" != "hermes" ]]; then
+    warn "--category 仅对 --tool hermes 生效，已忽略。"
+    HERMES_CATEGORIES=()
+  fi
 
   check_integrations
 

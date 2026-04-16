@@ -777,7 +777,25 @@ NousResearch 的开源 AI 智能体框架，支持技能系统、子代理编排
 ./scripts/install.sh --tool hermes
 ```
 
-安装后在 Hermes CLI 中可通过 `hermes skills` 查看和管理所有技能，或在对话中自然语言激活。
+安装后**推荐在 Hermes CLI** 中通过 `hermes skills` 查看和管理所有技能，或在对话中自然语言激活。
+
+> ⚠️ **Discord 模式下不要一次性全量安装**
+>
+> Hermes 的 Discord 集成会把每一个 skill 注册成 Discord 斜杠命令，Discord API 对 bot 所有命令的 JSON 序列化总长度有 **8000 字符硬上限**，超过后会返回 `error code 50035`（见 [issue #45](https://github.com/jnMetaCode/agency-agents-zh/issues/45)）。本仓库有近 200 个 skill，一次装全会直接炸 Discord。
+>
+> 解决办法：在 Discord 中使用时请按**分类**分批安装，用 `--category` 参数（可多次传入）：
+>
+> ```bash
+> # 只装 marketing 分类
+> ./scripts/install.sh --tool hermes --category marketing
+>
+> # 同时装 engineering 和 design
+> ./scripts/install.sh --tool hermes --category engineering --category design
+> ```
+>
+> 可选分类：`academic, blender, design, engineering, finance, game-development, godot, hr, legal, marketing, paid-media, product, project-management, roblox-studio, sales, spatial-computing, specialized, supply-chain, support, testing, unity, unreal-engine`。
+>
+> Hermes CLI 本身没有此限制，全量安装可以继续使用。
 </details>
 
 <details>

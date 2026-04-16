@@ -24,9 +24,16 @@
 #   hermes       — 复制到 %USERPROFILE%\.hermes\skills\（全局）
 #   kiro         — 复制到 %USERPROFILE%\.kiro\agents\（全局）
 #   all          — 安装所有已检测到的工具（默认）
+#
+# Hermes 专属参数：
+#   -Category <名称[,名称...]>  只安装某一分类下的 skills，可传多个分类。
+#                                Discord 模式下 Hermes 会把每个 skill 注册为斜杠命令，
+#                                总 JSON 超过 8000 字符会被 Discord API 拒绝 (error 50035)，
+#                                若需要在 Discord 中使用建议按分类分批安装。
 
 param(
     [string]$Tool = "all",
+    [string[]]$Category = @(),
     [switch]$Help
 )
 
@@ -336,10 +343,24 @@ function Install-Hermes {
     $src  = Join-Path $Integrations "hermes"
     $dest = Join-Path $Home_ ".hermes\skills"
     if (-not (Test-Path $src)) { Write-Err "integrations\hermes 不存在，请先运行 convert.ps1 -Tool hermes"; return }
+
+    $filterNote = ""
+    if ($Category.Count -gt 0) {
+        foreach ($c in $Category) {
+            if (-not (Test-Path (Join-Path $src $c))) {
+                $avail = (Get-ChildItem -Path $src -Directory | ForEach-Object Name) -join ", "
+                Write-Err "hermes 分类不存在: $c（可选: $avail）"
+                return
+            }
+        }
+        $filterNote = " [分类: $($Category -join ', ')]"
+    }
+
     $count = 0
     # 保留两级目录结构：category/skill-name/SKILL.md
     Get-ChildItem -Path $src -Directory | ForEach-Object {
         $catName = $_.Name
+        if ($Category.Count -gt 0 -and ($Category -notcontains $catName)) { return }
         Get-ChildItem -Path $_.FullName -Directory | ForEach-Object {
             $skillFile = Join-Path $_.FullName "SKILL.md"
             if (Test-Path $skillFile) {
@@ -350,7 +371,11 @@ function Install-Hermes {
             }
         }
     }
-    Write-OK "Hermes Agent: $count 个 skills -> $dest"
+    Write-OK "Hermes Agent: $count 个 skills -> $dest$filterNote"
+    if ($Category.Count -eq 0 -and $count -gt 80) {
+        Write-Warn "Hermes Discord 模式对斜杠命令总长有 8000 字符上限（error 50035）。"
+        Write-Warn "若要在 Discord 中使用，建议用 -Category <名称> 按分类分批安装。"
+    }
 }
 
 function Install-Kiro {
@@ -391,6 +416,11 @@ function Install-Tool {
 
 # --- 入口 ---
 Check-Integrations
+
+if ($Category.Count -gt 0 -and $Tool -ne "hermes") {
+    Write-Warn "-Category 仅对 -Tool hermes 生效，已忽略。"
+    $Category = @()
+}
 
 $selectedTools = @()
 
