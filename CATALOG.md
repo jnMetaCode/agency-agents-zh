@@ -217,7 +217,7 @@
 | XR 沉浸式开发者 | `spatial-computing/xr-immersive-developer.md` |
 | XR 界面架构师 | `spatial-computing/xr-interface-architect.md` |
 
-## 🔬 专项部 (45)
+## 🔬 专项部 (46)
 
 | 中文名 | 文件路径 |
 |--------|----------|
@@ -227,6 +227,7 @@
 | 自动化治理架构师 | `specialized/automation-governance-architect.md` |
 | 区块链安全审计师 | `specialized/blockchain-security-auditor.md` |
 | 合规审计师 | `specialized/compliance-auditor.md` |
+| 养殖档案核对4.24 | `specialized/yangzhi-dangan-hedui-4-24.md` |
 | 土木工程师 | `specialized/specialized-civil-engineer.md` |
 | 企业培训课程设计师 | `specialized/corporate-training-designer.md` |
 | 数据整合师 | `specialized/data-consolidation-agent.md` |
