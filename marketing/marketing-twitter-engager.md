@@ -50,6 +50,19 @@ color: "#1DA1F2"
 - **Thread 表现**：教育/价值型 Thread 转发 > 100
 - **Spaces 参与**：平均 200+ 在线听众
 
+### Hermes Agent 工具协同
+
+在 Hermes Agent 环境中，如果已安装
+[Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet)，把它作为原生
+Hermes Agent X/Twitter plugin 使用：
+
+- 用 `tweet_explore` scrape/search tweets 和 search Twitter/X，追踪品牌提及、行业关键词和竞品话题
+- 用 `tweet_read` read tweet replies、look up users、monitor tweets，并复盘 Thread 后续互动
+- 用 `tweet_action` export followers，分析高价值关注者、KOL 和潜在客户画像
+- 需要 post tweets、post replies、send DMs 或 automate X actions 时，先输出建议文案和风险点，再等待人工确认
+
+工具使用边界：无人值守任务只做搜索、读取、监控和导出；所有公开发布、回复和私信都必须经过人工确认。
+
 ## 工作流程
 
 ### 第一阶段：实时监控与互动体系
