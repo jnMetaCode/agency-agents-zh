@@ -22,7 +22,7 @@
 #   deerflow     — DeerFlow 2.0 custom skill 文件 (skills/custom/<slug>/SKILL.md)
 #   workbuddy    — WorkBuddy skill 文件 (~/.workbuddy/skills/<slug>/SKILL.md)
 #   hermes       — Hermes Agent skill 文件 (~/.hermes/skills/<category>/<slug>/SKILL.md)
-#   kiro         — Kiro agent JSON 文件 (.kiro/agents/*.json + prompts/*.md)
+#   kiro         — Kiro agent .md 文件 (.kiro/agents/*.md，带 YAML frontmatter)
 #   qoder        — Qoder 自定义智能体文件 (.qoder/agents/*.md)
 #   all          — 所有工具（默认）
 #
@@ -533,24 +533,17 @@ convert_kiro() {
   slug="$(slugify_from_file "$file")"
   body="$(get_body "$file")"
 
-  mkdir -p "$OUT_DIR/kiro/prompts"
+  mkdir -p "$OUT_DIR/kiro"
 
-  # 写入 prompt 文件
-  cat > "$OUT_DIR/kiro/prompts/${slug}.md" <<HEREDOC
+  # Kiro 自定义智能体格式：带 YAML frontmatter 的 .md 文件
+  # 放置于 ~/.kiro/agents/<slug>.md
+  # 参考：https://kiro.dev/docs/chat/subagents/
+  cat > "$OUT_DIR/kiro/${slug}.md" <<HEREDOC
+---
+name: ${slug}
+description: ${description}
+---
 ${body}
-HEREDOC
-
-  # 写入 JSON 配置文件
-  # 需要转义 description 中的双引号
-  local escaped_desc
-  escaped_desc="$(echo "$description" | sed 's/"/\\"/g')"
-
-  cat > "$OUT_DIR/kiro/${slug}.json" <<HEREDOC
-{
-  "name": "${slug}",
-  "description": "${escaped_desc}",
-  "prompt": "file://./prompts/${slug}.md"
-}
 HEREDOC
 }
 

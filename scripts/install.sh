@@ -452,24 +452,19 @@ install_kiro() {
 
   [[ -d "$src" ]] || { err "integrations/kiro 不存在。请先运行 convert.sh --tool kiro"; return 1; }
 
-  mkdir -p "$dest/prompts"
+  mkdir -p "$dest"
 
-  # 复制 JSON 配置文件
+  # Kiro 自定义智能体格式：.md 文件（带 YAML frontmatter）
+  # 参考：https://kiro.dev/docs/chat/subagents/
   local f
   while IFS= read -r -d '' f; do
     cp "$f" "$dest/"
     (( count++ )) || true
-  done < <(find "$src" -maxdepth 1 -name "*.json" -print0)
-
-  # 复制 prompt 文件
-  if [[ -d "$src/prompts" ]]; then
-    while IFS= read -r -d '' f; do
-      cp "$f" "$dest/prompts/"
-    done < <(find "$src/prompts" -maxdepth 1 -name "*.md" -print0)
-  fi
+  done < <(find "$src" -maxdepth 1 -name "*.md" -print0)
 
   ok "Kiro: $count 个智能体 -> $dest"
-  warn "提示: 在 Kiro 中使用 '/agent swap' 切换智能体"
+  warn "提示: Kiro 会自动识别 ~/.kiro/agents/ 下的 .md 文件作为自定义子智能体"
+  warn "提示: 在对话中使用 '/<agent-name>' 或让 Kiro 自动选择合适的子智能体"
 }
 
 install_qoder() {

@@ -20,7 +20,7 @@
 #   deerflow     — DeerFlow 2.0 custom skill 文件
 #   workbuddy    — WorkBuddy skill 文件
 #   hermes       — Hermes Agent skill 文件
-#   kiro         — Kiro agent JSON 文件
+#   kiro         — Kiro agent .md 文件（带 YAML frontmatter）
 #   all          — 所有工具（默认）
 
 param(
@@ -341,17 +341,18 @@ function Convert-Kiro {
     $description = Get-Field "description" $Lines
     $slug        = Get-Slug $File
     $body        = Get-Body $Lines
-    $promptsDir  = Join-Path $OutDir "kiro\prompts"
-    New-Item -ItemType Directory -Force -Path $promptsDir | Out-Null
-    $body | Set-Content -Path (Join-Path $promptsDir "${slug}.md") -Encoding UTF8
-    $escapedDesc = $description -replace '"','\"'
+    $kiroDir     = Join-Path $OutDir "kiro"
+    New-Item -ItemType Directory -Force -Path $kiroDir | Out-Null
+    # Kiro 自定义智能体格式：带 YAML frontmatter 的 .md 文件
+    # 放置于 ~/.kiro/agents/<slug>.md
+    # 参考：https://kiro.dev/docs/chat/subagents/
     @"
-{
-  "name": "$slug",
-  "description": "$escapedDesc",
-  "prompt": "file://./prompts/${slug}.md"
-}
-"@ | Set-Content -Path (Join-Path $OutDir "kiro\${slug}.json") -Encoding UTF8
+---
+name: $slug
+description: $description
+---
+$body
+"@ | Set-Content -Path (Join-Path $kiroDir "${slug}.md") -Encoding UTF8
 }
 
 # --- Aider / Windsurf 累积 ---

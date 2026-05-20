@@ -382,14 +382,13 @@ function Install-Kiro {
     $src  = Join-Path $Integrations "kiro"
     $dest = Join-Path $Home_ ".kiro\agents"
     if (-not (Test-Path $src)) { Write-Err "integrations\kiro 不存在，请先运行 convert.ps1"; return }
-    New-Item -ItemType Directory -Force -Path (Join-Path $dest "prompts") | Out-Null
-    $count = (Get-ChildItem -Path $src -Filter "*.json" | ForEach-Object { Copy-Item $_.FullName -Destination $dest; 1 } | Measure-Object -Sum).Sum
-    if (Test-Path (Join-Path $src "prompts")) {
-        Get-ChildItem -Path (Join-Path $src "prompts") -Filter "*.md" |
-            ForEach-Object { Copy-Item $_.FullName -Destination (Join-Path $dest "prompts") }
-    }
+    New-Item -ItemType Directory -Force -Path $dest | Out-Null
+    # Kiro 自定义智能体格式：.md 文件（带 YAML frontmatter）
+    # 参考：https://kiro.dev/docs/chat/subagents/
+    $count = (Get-ChildItem -Path $src -Filter "*.md" | ForEach-Object { Copy-Item $_.FullName -Destination $dest; 1 } | Measure-Object -Sum).Sum
     Write-OK "Kiro: $count 个智能体 -> $dest"
-    Write-Warn "提示: 在 Kiro 中使用 '/agent swap' 切换智能体"
+    Write-Warn "提示: Kiro 会自动识别 ~/.kiro/agents/ 下的 .md 文件作为自定义子智能体"
+    Write-Warn "提示: 在对话中使用 '/<agent-name>' 或让 Kiro 自动选择合适的子智能体"
 }
 
 function Install-Tool {
