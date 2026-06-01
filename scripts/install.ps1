@@ -198,7 +198,7 @@ function Install-GeminiCli {
     Copy-Item (Join-Path $src "gemini-extension.json") -Destination $dest
     $count = 0
     Get-ChildItem -Path (Join-Path $src "skills") -Directory | ForEach-Object {
-        $skillDest = Join-Path $dest "skills" $_.Name
+        $skillDest = Join-Path (Join-Path $dest "skills") $_.Name
         New-Item -ItemType Directory -Force -Path $skillDest | Out-Null
         Copy-Item (Join-Path $_.FullName "SKILL.md") -Destination $skillDest
         $count++
