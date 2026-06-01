@@ -63,6 +63,22 @@ ao compose "帮我写一篇关于 AI Agent 的深度分析文章" --run
 
 ---
 
+## 🙏 赞助商
+
+<p align="center">
+  <a href="https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents">
+    <img src="assets/sponsor-compshare.jpeg" alt="优云智算 — 热门国产模型按次调用套餐包，低至 49 元/月起" width="100%">
+  </a>
+</p>
+
+感谢 **[优云智算](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)** 赞助本项目！
+
+优云智算是 **UCloud 旗下的 AI 云平台**，主打包月、按次的高性价比国模 **Agent Plan 套餐，低至 49 元/月起**；同时提供官转稳定的海外模型，支持接入 **Claude Code、Codex 及 API 调用**，并面向企业提供高并发、7×24 技术支持、自助开票。
+
+> 🎁 **通过本链接注册，即可领取免费 5 元平台体验金** 👉 **[立即注册 →](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)**
+
+---
+
 ## 快速开始
 
 ### 方式一：一键安装到你的 AI 工具
