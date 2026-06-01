@@ -36,6 +36,8 @@
 
 🎁 **通过[此链接](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)注册的用户，可得免费5元平台体验金！**
 
+<sub>📮 想赞助本项目 / 商务合作？联系：[alanalanal@qq.com](mailto:alanalanal@qq.com)</sub>
+
 </td>
 </tr>
 </table>
