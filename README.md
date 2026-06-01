@@ -21,7 +21,7 @@
 
 ---
 
-## 🙏 赞助商
+## 🙏 赞助商 &nbsp;<sub>[想出现在这里？→](mailto:jnMetaCode@qq.com)</sub>
 
 <table>
 <tr>
@@ -35,8 +35,6 @@
 感谢[优云智算](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)赞助了本项目！优云智算是UCloud旗下AI云平台，主打包月、按次的高性价比国模Agent Plan套餐,低至49元/月起。同时提供官转稳定海外模型。支持接入 Claude Code、Codex 及 API 调用。支持企业高并发、7*24技术支持、自助开票。
 
 🎁 **通过[此链接](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)注册的用户，可得免费5元平台体验金！**
-
-<sub>📮 想赞助本项目 / 商务合作？联系：[alanalanal@qq.com](mailto:alanalanal@qq.com)</sub>
 
 </td>
 </tr>
