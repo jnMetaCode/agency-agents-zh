@@ -21,6 +21,29 @@
 
 ---
 
+## 🙏 赞助商
+
+<table>
+<tr>
+<td width="60%">
+  <a href="https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents">
+    <img src="assets/sponsor-compshare.jpeg" alt="优云智算 — 热门国产模型按次调用套餐包，低至 49 元/月起" width="100%">
+  </a>
+</td>
+<td width="40%" valign="top">
+
+**感谢 [优云智算](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents) 赞助本项目！**
+
+UCloud 旗下 AI 云平台，国模 **Agent Plan 套餐低至 49 元/月起**，官转稳定海外模型，支持 **Claude Code / Codex / API**，企业级高并发、7×24 技术支持、自助开票。
+
+🎁 **[点此注册领 5 元体验金 →](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)**
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🚀 Agency Orchestrator — 让角色库真正跑起来
 
 > **💡 一句话，让多个 AI 专家自动协作，几分钟交付完整方案。**
@@ -52,29 +75,6 @@ ao compose "帮我写一篇关于 AI Agent 的深度分析文章" --run
     <strong>⭐ 查看 Agency Orchestrator — 让 215 个角色为你协作 →</strong>
   </a>
 </p>
-
----
-
-## 🙏 赞助商
-
-<table>
-<tr>
-<td width="60%">
-  <a href="https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents">
-    <img src="assets/sponsor-compshare.jpeg" alt="优云智算 — 热门国产模型按次调用套餐包，低至 49 元/月起" width="100%">
-  </a>
-</td>
-<td width="40%" valign="top">
-
-**感谢 [优云智算](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents) 赞助本项目！**
-
-UCloud 旗下 AI 云平台，国模 **Agent Plan 套餐低至 49 元/月起**，官转稳定海外模型，支持 **Claude Code / Codex / API**，企业级高并发、7×24 技术支持、自助开票。
-
-🎁 **[点此注册领 5 元体验金 →](https://passport.compshare.cn/register?referral_code=ETD3L5JBM13CtKARkMORot&ytag=GPU_YY_YX_git_agency-agents)**
-
-</td>
-</tr>
-</table>
 
 ---
 
