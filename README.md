@@ -21,7 +21,7 @@
 
 ---
 
-## 🙏 赞助商 &nbsp;<sub>[想出现在这里？→](mailto:jnMetaCode@qq.com)</sub>
+## 🙏 赞助商 &nbsp;<sub>想出现在这里？联系 [jnMetaCode@qq.com](mailto:jnMetaCode@qq.com)</sub>
 
 <table>
 <tr>
