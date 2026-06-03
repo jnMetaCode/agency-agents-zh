@@ -21,7 +21,7 @@
 
 ---
 
-## 🙏 赞助商 &nbsp;<sub>想出现在这里？联系 [jnMetaCode@qq.com](mailto:jnMetaCode@qq.com)</sub>
+## 🙏 赞助商 &nbsp;<sub>[想出现在这里？→](https://github.com/jnMetaCode/agency-agents-zh/issues/new?title=%E8%B5%9E%E5%8A%A9+%2F+%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E5%92%A8%E8%AF%A2&body=%E5%97%A8%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E8%B5%9E%E5%8A%A9%2F%E5%90%88%E4%BD%9C%EF%BC%88%E8%AE%A9%E4%BA%A7%E5%93%81%E5%87%BA%E7%8E%B0%E5%9C%A8+README+%E8%B5%9E%E5%8A%A9%E5%95%86%E4%BD%8D%EF%BC%89%E3%80%82%0A%0A-+%E4%BA%A7%E5%93%81%2F%E5%B9%B3%E5%8F%B0%EF%BC%9A%0A-+%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D%EF%BC%9A%0A-+%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F%EF%BC%88%E9%82%AE%E7%AE%B1%2F%E5%BE%AE%E4%BF%A1%EF%BC%89%EF%BC%9A%0A%0A%EF%BC%88%E6%9D%A5%E8%B7%AF%E4%B8%8D%E6%AD%A3%E7%9A%84%E4%B8%AD%E8%BD%AC%E7%AB%99%E5%B0%B1%E4%B8%8D%E5%BF%85%E4%BA%86+%F0%9F%99%8F%EF%BC%89)</sub>
 
 <table>
 <tr>
