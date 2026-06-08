@@ -38,6 +38,20 @@
 
 </td>
 </tr>
+<tr>
+<td width="55%">
+  <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=agency-agents-zh">
+    <img src="assets/atlas-cloud-logo.png" alt="Atlas Cloud" width="100%">
+  </a>
+</td>
+<td width="45%" valign="middle">
+
+感谢 [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=agency-agents-zh) 赞助了本项目！Atlas Cloud 是全模态 AI 推理平台，为本仓库 215 个 AI 专家角色提供 LLM API 支持。一个 API Key 即可访问 DeepSeek、Qwen、GLM、Kimi、MiniMax 等 59+ 主流模型，无需分别管理多个厂商账号。
+
+🎁 **更经济的 API 用量方案：[Atlas Cloud Coding Plan](https://www.atlascloud.ai/console/coding-plan)**
+
+</td>
+</tr>
 </table>
 
 ---
