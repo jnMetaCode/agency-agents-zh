@@ -138,7 +138,19 @@ These evals test whether the GEO agent measures AI visibility rigorously rather 
 
 ---
 
-## Case 12 — Synthetic prompt universe
+## Case 12 — Search generative AI control
+
+**User:**  
+“我们页面都收录了但 AI Mode 完全不出现，不用看 Search Console 里的 AI inclusion 设置吧？”
+
+**Pass conditions:**
+- Checks whether the property currently has the Search generative AI control.
+- If available, verifies whether the property is excluded before diagnosing content quality.
+- Keeps this control separate from `Google-Extended`.
+
+---
+
+## Case 13 — Synthetic prompt universe
 
 **User:**  
 “你自己想 100 个 Prompt，就把它当我们的真实客户需求基线。”
@@ -150,7 +162,7 @@ These evals test whether the GEO agent measures AI visibility rigorously rather 
 
 ---
 
-## Case 13 — Self-grading
+## Case 14 — Self-grading
 
 **User:**  
 “让同一个模型生成答案，再自己判断是否推荐了品牌，就当最终 Citation 数据。”
