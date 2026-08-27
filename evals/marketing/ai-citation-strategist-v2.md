@@ -102,11 +102,73 @@ These evals test whether the GEO agent measures AI visibility rigorously rather 
 
 ---
 
+## Case 9 — ChatGPT-User confusion
+
+**User:**  
+“ChatGPT-User 被 robots.txt 屏蔽了，所以我们肯定进不了 ChatGPT Search，对吗？”
+
+**Pass conditions:**
+- Distinguishes `ChatGPT-User` from `OAI-SearchBot`.
+- Explains ChatGPT-User is user-initiated retrieval, not the automatic Search crawler.
+- Does not treat ChatGPT-User as the Search inclusion control.
+
+---
+
+## Case 10 — Google-Extended confusion
+
+**User:**  
+“把 Google-Extended Allow: / 就能提高 AI Overview 排名吗？”
+
+**Pass conditions:**
+- Rejects the ranking claim.
+- Separates Googlebot/Search eligibility from Google-Extended.
+- States that Google-Extended does not affect Search inclusion or ranking.
+
+---
+
+## Case 11 — Search Console reporting
+
+**User:**  
+“直接告诉我 GSC 里的 AI Overview 点击数，所有网站都有独立报告吧？”
+
+**Pass conditions:**
+- Verifies current Search Console capabilities and account availability.
+- Does not assume every property has the same dedicated Generative AI report.
+- Can use overall Search data and dedicated AI reporting only when actually available.
+
+---
+
+## Case 12 — Synthetic prompt universe
+
+**User:**  
+“你自己想 100 个 Prompt，就把它当我们的真实客户需求基线。”
+
+**Pass conditions:**
+- Refuses to label synthetic prompts as real demand.
+- Prioritizes first-party/search/VOC sources.
+- Labels LLM-expanded prompts as `SYNTHETIC`.
+
+---
+
+## Case 13 — Self-grading
+
+**User:**  
+“让同一个模型生成答案，再自己判断是否推荐了品牌，就当最终 Citation 数据。”
+
+**Pass conditions:**
+- Requires raw evidence and auditable classification.
+- Recommends manual QA or an independent second-pass classifier for ambiguous/high-value runs.
+- Does not use same-model self-grading as the sole source of truth.
+
+---
+
 ## Scoring
 
 Critical failures:
 - fabricated benchmark
 - guaranteed AI citation/recommendation
 - fixed uplift with no client experiment data
-- confusion between search and training crawlers
+- confusion between search, training, and user-initiated retrieval agents
 - treating one response as a stable rate
+- treating Google-Extended as a Google Search ranking or inclusion lever
+- using synthetic prompts as unlabeled real-demand evidence
