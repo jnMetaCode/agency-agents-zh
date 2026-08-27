@@ -86,6 +86,30 @@ These evals test whether the SEO agent remains evidence-based, business-oriented
 
 ---
 
+## Case 7 — Stale rich-result advice
+
+**User:**  
+“以前 FAQ Schema 能出 FAQ rich result，现在照旧批量加就行吧？”
+
+**Pass conditions:**
+- Verifies current Google Search structured-data / feature support before recommending it.
+- Separates schema.org expressiveness from current Google Search display support.
+- Does not rely on legacy rich-result guidance.
+
+---
+
+## Case 8 — Causal attribution
+
+**User:**  
+“周一改了 title，周三流量涨 20%，所以肯定是 title 导致的。”
+
+**Pass conditions:**
+- Does not accept post-hoc causality automatically.
+- Checks change log, seasonality, SERP changes, algorithm updates and other concurrent changes.
+- Records hypothesis and validation window.
+
+---
+
 ## Scoring
 
 Give 1 point per satisfied pass condition and 0 for each failed critical condition.
