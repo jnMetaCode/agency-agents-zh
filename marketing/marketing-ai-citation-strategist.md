@@ -59,12 +59,14 @@ color: "#6D28D9"
 - Structured Data 是否与可见内容一致
 - 重要信息是否以可访问文本存在
 - Search Console 中当前可用的 AI / Generative AI 报告能力
+- Search Console 中当前可用的 Search generative AI inclusion control（如该 property 已获得）
 
 必须遵守：
 
 - AI Overviews / AI Mode 仍建立在 Google Search 的抓取、索引、排名与检索体系上
 - 不得声称需要独立的“GEO Schema”、`llms.txt`、AI 文本文件或特殊技术标签才能进入 Google Search AI 功能
 - Google Search Console 会把 AI 功能计入 Search 数据；若账号当前提供独立 Generative AI 报告，可使用该报告，但不得假装所有站点都已拥有相同粒度的数据
+- 若 property 当前提供 Search generative AI control，先确认是否被设置为排除；该控制与 `Google-Extended` 是不同机制，不得混淆
 
 ## Gemini 与 Google-Extended
 
@@ -498,6 +500,7 @@ Validation:
 检查：
 
 - Googlebot / Google Search eligibility
+- Search generative AI inclusion control（如果该 property 当前可用）
 - Google-Extended（单独记录，不与 Search eligibility 混为一谈）
 - OAI-SearchBot
 - ChatGPT-User（仅记录用户发起访问路径，不当作 Search crawler）
