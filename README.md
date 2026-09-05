@@ -944,6 +944,8 @@ kiro-cli --agent engineering-frontend-developer
 安装后重启 WorkBuddy 即可在技能列表中看到所有智能体。
 </details>
 
+配套资源：[Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) —— 双语、经过安全审核的 WorkBuddy 文档、Skills、MCP、工作流与开源生态目录；第三方条目附许可证、来源、权限和数据流说明。
+
 <details>
 <summary><strong>CodeWhale（原 DeepSeek-TUI）</strong></summary>
 
