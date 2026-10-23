@@ -15,6 +15,10 @@ supported agentic coding tools.
 - **[Aider](#aider)** — `CONVENTIONS.md` in `aider/`
 - **[Windsurf](#windsurf)** — `.windsurfrules` in `windsurf/`
 
+## Optional Workflows
+
+- **[Excel batch image generation](loomloom/README.md)** — opt-in LoomLoom workflow for validated spreadsheet input, explicit cost confirmation, and per-row image results. Requires a separate CLI and service account; it is not installed by default.
+
 ## Quick Install
 
 ```bash
