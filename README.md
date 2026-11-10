@@ -136,6 +136,22 @@
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="25%">
+  <a href="https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh">
+    <img src="assets/sponsor-apixo-ai.jpg" alt="APIXO — AI 图片与视频创作，支持网页端与 API，黑五限时特惠" width="100%">
+  </a>
+</td>
+<td width="75%" valign="middle">
+
+感谢 [APIXO](https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh) 赞助本项目！无需编程，在 APIXO 网页端即可生成 AI 图片与视频，也可通过 API 接入自己的应用与自动化工作流。黑五期间，[seedream5.5](https://apixo.ai/models/seedream-5-5?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh)仅 **$0.014/张**，原价 $0.02/张，限时 7 折。指定模型与规格较活动页列示的市场参考价最高省 66%，优惠自动生效，无需优惠码。**活动截至北京时间 2026 年 12 月 31 日 23:59。** [查看 APIXO 黑五优惠 →](https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh)
+
+</td>
+</tr>
+</table>
+
+
 ---
 
 ## 🚀 让角色库跑起来 · Agency Orchestrator
