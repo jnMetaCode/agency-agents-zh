@@ -152,6 +152,22 @@
 </table>
 
 
+<table>
+<tr>
+<td width="25%">
+  <a href="https://beichenapi.com/register?aff=RM34GKKSY7EC">
+    <img src="assets/sponsor-beichenapi.jpg" alt="北辰 API — 穩定、高效的多模型 API 聚合服務" width="100%">
+  </a>
+</td>
+<td width="75%" valign="middle">
+
+感謝 [北辰 API](https://beichenapi.com/register?aff=RM34GKKSY7EC) 贊助本專案！北辰 API 提供穩定、高效的多模型 API 聚合服務，支援 DeepSeek、GPT-6.1、Gemini 4A / 4C、Kimi K3.1 Pro 等主流模型，適用於 AI 程式設計、Agent 開發及多模型呼叫場景。平臺目前已上線 Kimi K3.1 Pro、GPT-6.1 Terra、Gemini 4A / 4C，並提供自建 Gemini / GPT / DS 號池，接入便捷，適合開發者與團隊使用。🎁 透過[此連結註冊](https://beichenapi.com/register?aff=RM34GKKSY7EC)即可了解更多服務資訊。
+
+</td>
+</tr>
+</table>
+
+
 ---
 
 ## 🚀 讓角色庫跑起來 · Agency Orchestrator
