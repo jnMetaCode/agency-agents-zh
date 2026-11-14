@@ -139,13 +139,16 @@
 <table>
 <tr>
 <td width="25%">
-  <a href="https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh">
-    <img src="assets/sponsor-apixo-ai.jpg" alt="APIXO — AI 图片与视频创作，支持网页端与 API，黑五限时特惠" width="100%">
+  <a href="https://apixo.ai/zh?utm_source=github&utm_medium=sponsorship&utm_campaign=agency_agents&utm_content=logo" target="_blank">
+    <img src="assets/sponsors/apixo-ai-card-450x250.png" alt="APIXO AI: 一站式 AI 视频制作与多模态创作平台" width="100%">
   </a>
 </td>
 <td width="75%" valign="middle">
 
-感谢 [APIXO](https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh) 赞助本项目！无需编程，在 APIXO 网页端即可生成 AI 图片与视频，也可通过 API 接入自己的应用与自动化工作流。黑五期间，[seedream5.5](https://apixo.ai/models/seedream-5-5?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh)仅 **$0.014/张**，原价 $0.02/张，限时 7 折。指定模型与规格较活动页列示的市场参考价最高省 66%，优惠自动生效，无需优惠码。**活动截至北京时间 2026 年 12 月 31 日 23:59。** [查看 APIXO 黑五优惠 →](https://apixo.ai/?utm_source=github&utm_medium=sponsorship&utm_campaign=github_readme&utm_content=jnmetacode_agency-agents-zh)
+**[APIXO AI](https://apixo.ai/zh?utm_source=github&utm_medium=sponsorship&utm_campaign=agency_agents&utm_content=brand_mention)：一站式 AI 视频制作与多模态创作平台**
+原生支持 MCP 协议与统一多模态 API，一键直连各类 Agent 框架与自动化工作流。
+集成 Seedream 5.5 旗舰生图（**[API 低至 $0.014/张起](https://apixo.ai/zh/models/seedream-5-5?utm_source=github&utm_medium=sponsorship&utm_campaign=agency_agents&utm_content=seedream_5_5)**）、Seedance 2.5 视频与 Suno 音乐模型。中国开发者免海外信用卡、支持银联即开即用，注册即赠免费体验额度！
+👉 **[快速查看 MCP 协议集成指南与接入示例 →](https://apixo.ai/zh/mcp?utm_source=github&utm_medium=sponsorship&utm_campaign=agency_agents&utm_content=mcp_page)**
 
 </td>
 </tr>
