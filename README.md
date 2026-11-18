@@ -62,21 +62,6 @@
 <table>
 <tr>
 <td width="25%">
-  <a href="https://lanox.ai/?c=X3RD38F7&inviteCode=A3HRUB6M">
-    <img src="assets/sponsor-lanox.jpeg" alt="LanoX AI — 全球模型接入服务，聚合 GPT / Claude / Gemini / Qwen / Grok 及多模态模型，顶级模型低至官方价 1 折起" width="100%">
-  </a>
-</td>
-<td width="75%" valign="middle">
-
-感谢 [LanoX AI](https://lanox.ai/?c=X3RD38F7&inviteCode=A3HRUB6M) 赞助了本项目！LanoX AI 为开发者、团队与企业提供稳定、高性价比的全球模型接入服务，覆盖 GPT、Claude、Gemini、Qwen、Grok 等主流模型，以及 Seedance 2.0、GPT Image、Gemini Nano Banana 等多模态创作能力。高可用、原生能力输出、不降智、不混模、调用与计费透明，顶级模型低至官方价 1 折起，文档清晰、接入简单，支持开票与企业批量调用，适用于 AI 产品、Agent、内容平台与研发团队。🎁 **通过[此链接](https://lanox.ai/?c=X3RD38F7&inviteCode=A3HRUB6M)注册的用户，可获赠 5 美金体验额度与百万免费 Token，另有 500+ 免费模型可用！**
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="25%">
   <a href="https://www.shengsuanyun.com/?from=CH_QKH696UI">
     <img src="assets/sponsor-shengsuanyun.jpeg" alt="胜算云 — 面向 AI 原生团队的模型 API 聚合平台，汇集 Claude / ChatGPT / Gemini 等海内外大模型，提供企业级定制网关" width="100%">
   </a>
@@ -99,21 +84,6 @@
 <td width="75%" valign="middle">
 
 感谢 [APIMart](https://go.apimart.ai/gh-agency-agents-zh) 赞助了本项目！APIMart 是专注 AI 图片/视频生成的低价 API 平台，GPT-Image-2 低至 $0.006/张，1 美元可出图 160+ 张。图片、视频共用一套异步 API，提交任务拿 ID、轮询或回调取结果，跑批万张不超时、换模型不改代码。按量付费、无月费。🎁 **通过[此链接](https://go.apimart.ai/gh-agency-agents-zh)注册即可开用！**
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="25%">
-  <a href="https://www.packyapi.ai/register?aff=Zpx1">
-    <img src="assets/sponsor-packycode.jpeg" alt="PackyCode — 稳定高效的 API 中转服务，统一域名与密钥接入主流大模型，97% 可用性，多分组低至 2 折，提供 Codex / Claude Code 高速通道" width="100%">
-  </a>
-</td>
-<td width="75%" valign="middle">
-
-感谢 [PackyCode](https://www.packyapi.ai/register?aff=Zpx1) 赞助了本项目！PackyCode 是一家稳定、高效的 API 中转服务商，一句话接入主流大模型。统一域名、统一密钥、智能容灾切换，97% 可用性。人民币 1:1 充值，无汇率、无手续费坑，多分组折扣低至 2 折起，提供专属 Codex / Claude Code 高速通道。支持 Stripe、支付宝、微信、银行卡、对公付款，对公付款可开票。🎁 **新用户通过[此链接](https://www.packyapi.ai/register?aff=Zpx1)注册，首充立享折扣，另赠 $1 免费体验额度！**
 
 </td>
 </tr>
