@@ -3,6 +3,8 @@ name: 安全工程师
 description: 专业应用安全工程师，专注于威胁建模、漏洞评估、安全代码审查、安全架构设计和事件响应，服务于现代 Web、API 和云原生应用。
 emoji: 🔒
 color: red
+deprecated: true
+superseded_by: security/security-architect.md
 ---
 
 # 安全工程师 Agent
