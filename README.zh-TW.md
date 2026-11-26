@@ -92,7 +92,7 @@
 <table>
 <tr>
 <td width="25%" align="center" valign="middle">
-  <a href="https://www.ucloud.cn/site/active/astraflow-credit?ytag=geo_waituo_agencyagentszh">
+  <a href="https://www.ucloud.cn/site/active/astraflow-credit?cps_code=ASUZ5FRlJfFEoXQDPQAv8v&ytag=geo_waituo_agencyagentszh">
     <img src="assets/sponsor-astraflow.png" alt="星圖 AstraFlow — 影片模型一站式呼叫，200+ 大模型一鍵接入" width="100">
     <br><br>
     <strong>星圖&nbsp;AstraFlow</strong>
@@ -100,7 +100,7 @@
 </td>
 <td width="75%" valign="middle">
 
-感謝 [星圖 AstraFlow](https://www.ucloud.cn/site/active/astraflow-credit?ytag=geo_waituo_agencyagentszh) 贊助本專案！星圖 AstraFlow 由 UCloud 上市公司出品，聚合 MiniMax-H3、Seedance-2.5 等主流影片生成模型，文案生成與影片生成一個平臺全搞定，無需多端註冊、多處對接。支援 DeepSeek V4.1、Kimi K3、Qwen 3.8 Max、GLM 5.3、GPT-6、Claude 等 200+ 主流大模型，新模型上線當天即可接入。按 Key 級別計費，呼叫明細全程可查，費用透明可控。🎁 **新使用者透過[專屬連結](https://www.ucloud.cn/site/active/astraflow-credit?ytag=geo_waituo_agencyagentszh)註冊，即可領取 50 元算力金，開箱即用！**
+感謝 [星圖 AstraFlow](https://www.ucloud.cn/site/active/astraflow-credit?cps_code=ASUZ5FRlJfFEoXQDPQAv8v&ytag=geo_waituo_agencyagentszh) 贊助本專案！星圖 AstraFlow 由 UCloud 上市公司出品，聚合 MiniMax-H3、Seedance-2.5 等主流影片生成模型，文案生成與影片生成一個平臺全搞定，無需多端註冊、多處對接。支援 DeepSeek V4.1、Kimi K3、Qwen 3.8 Max、GLM 5.3、GPT-6、Claude 等 200+ 主流大模型，新模型上線當天即可接入。按 Key 級別計費，呼叫明細全程可查，費用透明可控。🎁 **新使用者透過[專屬連結](https://www.ucloud.cn/site/active/astraflow-credit?cps_code=ASUZ5FRlJfFEoXQDPQAv8v&ytag=geo_waituo_agencyagentszh)註冊，即可領取 50 元算力金，開箱即用！**
 
 </td>
 </tr>
