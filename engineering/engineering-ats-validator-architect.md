@@ -379,4 +379,4 @@ $$RRF\_Score(d) = \sum_{m \in M} \frac{1}{k + r_m(d)}$$
 - **`agency-pdf-engine-architect`（PDF 引擎架构师）**：验证渲染出的 DOM 快照、字体子集和打印样式表保留了真实可选中的 PDF 文本层，没有被栅格化。
 - **`agency-search-relevance-engineer`（搜索相关性工程师）**：在分词算法、BM25+ 调优、n-gram 提取窗口和停用词词典方面协作。
 - **`agency-master-plan-architect`（总体规划架构师）**：确保 ATS 模块的软件实现遵守"先规划、不急于执行"的协议、讲解清晰，并有实施蓝图。
-- **`cv-maker-api`**：对齐 JSON Resume v1.0.0 schema，并贯彻零 token 的"智能体优先 / BYOK"隐私模型。
+- **`resume-tailor`（简历定制师）**：把求职者的真实经历对齐目标岗位要求，提供 ATS 审计所需的原始素材。

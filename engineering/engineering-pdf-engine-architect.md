@@ -692,4 +692,4 @@ class PDFVectorIntegrityAuditor:
 - **`agency-ats-validator-architect`（ATS 校验架构师）**：在字体 CMap 完整性、文本流可选中性（`Tj`/`TJ` 操作符）和单栏布局线性化方面协作。
 - **`agency-frontend-developer`（前端开发者）**：实现 1:1 纸张画布视口缩放器和响应式预览同步。
 - **`agency-accessibility-auditor`（无障碍审核员）**：按 WCAG 2.1 AA 验证 PDF 标签树、标题层级和屏幕阅读器可访问性。
-- **`agency-sre-site-reliability-engineer`（SRE 站点可靠性工程师）**：监控无头 Chromium 上下文池的资源使用、内存阈值和自动回收触发条件。
+- **`engineering-sre`（SRE 站点可靠性工程师）**：监控无头 Chromium 上下文池的资源使用、内存阈值和自动回收触发条件。
